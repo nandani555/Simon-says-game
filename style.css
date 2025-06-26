@@ -1,0 +1,58 @@
+body{
+    text-align: center;
+}
+.btn{
+    height: 200px;
+    width: 200px;
+    border-radius: 20%;
+    border: 5px solid black;
+}
+.l1{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    gap: 20px;
+}
+.l2{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    gap: 20px;
+}
+    .btn:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+
+.btn:hover {
+  box-shadow: 0 0 20px rgba(255,255,255,0.4);
+}
+.red{background-color: red;}
+.yellow{
+    background-color: yellow;
+}
+.blue{
+    background-color: blue;
+}
+.green{
+    background-color: green;
+}
+/* Flash effects for game state transitions */
+.flash {
+  animation: flashAnim 0.3s ease-in-out;
+}
+
+.userflash {
+  animation: userFlashAnim 0.3s ease-in-out;
+}
+
+/* Flash keyframe animations */
+@keyframes flashAnim {
+  from { filter: brightness(150%); }
+  to { filter: brightness(100%); }
+}
+@keyframes userFlashAnim {
+  from { box-shadow: 0 0 30px rgba(18, 18, 11, 0.8); transform: scale(1.05); }
+  to { box-shadow: none; transform: scale(1); }
+}
