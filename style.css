@@ -40,19 +40,11 @@ body{
 }
 /* Flash effects for game state transitions */
 .flash {
-  animation: flashAnim 0.3s ease-in-out;
+    background-color: white;
 }
 
 .userflash {
-  animation: userFlashAnim 0.3s ease-in-out;
+  background-color: yellowgreen;
 }
 
-/* Flash keyframe animations */
-@keyframes flashAnim {
-  from { filter: brightness(150%); }
-  to { filter: brightness(100%); }
-}
-@keyframes userFlashAnim {
-  from { box-shadow: 0 0 30px rgba(18, 18, 11, 0.8); transform: scale(1.05); }
-  to { box-shadow: none; transform: scale(1); }
-}
+
